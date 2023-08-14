@@ -1,0 +1,29 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net7.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="Models\" />
+    <None Remove="Repo\" />
+    <None Remove="Services\" />
+    <None Remove="Repo\Interface\" />
+    <None Remove="Services\Interface\" />
+    <None Remove="Models\Common\" />
+    <None Remove="Models\Requests\" />
+    <None Remove="Models\Responses\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Models\" />
+    <Folder Include="Repo\" />
+    <Folder Include="Services\" />
+    <Folder Include="Repo\Interface\" />
+    <Folder Include="Services\Interface\" />
+    <Folder Include="Models\Common\" />
+    <Folder Include="Models\Requests\" />
+    <Folder Include="Models\Responses\" />
+  </ItemGroup>
+</Project>

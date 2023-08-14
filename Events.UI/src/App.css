@@ -1,0 +1,34 @@
+.App {
+  text-align: center;
+}
+
+.App-header {
+  background-color: #282c34;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: larger;
+  color: white;
+}
+
+
+.tab-btn {
+  margin: 10px;
+  padding: 10px 20px;
+  color: gray;
+  border-color: gray;
+  border-style: solid;
+  border-width: 0px 0px 2px 0px;
+  background-color: transparent;
+}
+.tab-in-active {
+  border-color: gray;
+  color: gray;
+  font-size: large;
+}
+.tab-active {
+  border-color: navy;
+  color: navy;
+  font-size: larger;
+}

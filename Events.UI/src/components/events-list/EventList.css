@@ -1,0 +1,150 @@
+.Events {
+  text-align: center;
+}
+
+.main {
+  margin: auto;
+  max-width: 1100px;
+}
+
+.events-table {
+  background-color: #fff;
+  border: none;
+  border-spacing: 0;
+  margin: 10px;
+  border: 1px solid gray;
+}
+
+.events-headings {
+  display: none;
+  color: #fff;
+  background-color: #34495e;
+}
+
+.events-header {
+  display: block;
+  padding: 10px 0 10px;
+  border: 0;
+  border-bottom: 1px solid #bdc3c7;
+}
+
+.events-row {
+  display: block;
+  padding: 10px 0 10px;
+  border: 0;
+  border-bottom: 1px solid #bdc3c7;
+}
+
+.events-row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.events-row::before {
+  display: block;
+}
+
+.events-cell {
+  clear: left;
+  display: block;
+  float: left;
+  padding: 10px 10px;
+  border: 0;
+}
+.events-description {
+  text-align: left;
+}
+
+.events-cell::before {
+  content: attr(data-label) ":";
+  display: block;
+  float: left;
+  margin-right: 15px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.events-description::before {
+  float: none;
+  margin-bottom: 20px;
+}
+
+.cta {
+  position: relative;
+  display: block;
+  padding: 10px;
+  width: 120px;
+  margin: 4px;
+  overflow: hidden;
+  color: #f44336;
+  text-align: center;
+  text-decoration: none;
+  border: 1px solid #f44336;
+  border-radius: 6px;
+  transition: all 0.3s ease;
+  background-color: white;
+}
+
+.cta-edit {
+  color: #34495e;
+  border: 1px solid #34495e;
+  background-color: white;
+}
+.events-date:before {
+  content: attr(data-label) ":";
+  display: block;
+  float: left;
+  margin-right: 15px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+@media screen and (min-width: 600px) {
+  .events-table {
+    padding: 0;
+    width: 100%;
+    border-collapse: collapse;
+    border-spacing: 0;
+  }
+  .cta {
+    bottom: 0;
+  }
+
+  .events-cell {
+    text-align: center;
+  }
+  .events-cell::before {
+    display: none;
+  }
+  .events-heading,
+  .events-cell {
+    display: table-cell;
+    float: none;
+    clear: none;
+  }
+  .events-description {
+    padding-left: 10px;
+    text-align: left;
+  }
+  .events-row {
+    display: table-row;
+    padding: 5px;
+  }
+  .events-headings {
+    display: table-header-group;
+    background-color: color(navBlue);
+  }
+  .events-date {
+    width: 16%;
+  }
+  .events-btn {
+    width: 14%;
+  }
+
+  .events-date > span {
+    margin-bottom: 3px;
+    font-size: 2.1rem;
+    display: block;
+  }
+}

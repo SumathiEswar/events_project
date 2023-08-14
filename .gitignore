@@ -1,0 +1,7 @@
+Events.Api/.vs/*
+Events.Api/Events.Api/bin/*
+Events.Api/Events.Api/obj/*
+Events.Api/Events.Api.Test/bin/*
+Events.Api/Events.Api.Test/obj/*
+Events.Api/Event.Application/bin/*
+Events.Api/Event.Application/obj/*
